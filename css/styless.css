@@ -3,6 +3,7 @@ a{
     font-family: Verdana, sans-serif;
     margin: 10px 20px;
     text-decoration: none;
+  
 }
 a:hover{
     color: silver;
@@ -18,6 +19,7 @@ body{
 h1{
     margin-top: 0px;
     color: rgb(44, 43, 43);
+    background: linear-gradient(45deg, #98cbff, #98ffcb);
 }
 h2{
     
@@ -26,15 +28,23 @@ h2{
 }
 h3{
     color: #11999E;
+    background: linear-gradient(45deg, #98cbff, #98ffcb);
     
 }
+
 hr{
-    border: dotted grey;
+    
+    /*border: dotted grey;*/
     border-width: 0.0 0 7px;
     width: 5%;
 }
 p{
     line-height: 2;
+}
+.dots{
+    border: dotted grey;
+    border-width: 0.0 0 7px;
+    width: 100%;
 }
 /************Hamburger menu******************/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
@@ -44,6 +54,7 @@ p{
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html {
     font-size: 62.5%;
@@ -68,6 +79,11 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    height: 70px;
+    background: #222;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
 .hamburger {
@@ -97,17 +113,17 @@ a {
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: #FFFFFF;
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: #FFFFFF;
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: #482ff7;
+    color: #FFFFFF;
 }
 
 @media only screen and (max-width: 768px) {
@@ -156,19 +172,33 @@ a {
 /**************CLASS STYLES*****************/
 
 .automation{
-    width: 25%;
+    width: 20%;
     float: left;
     margin-right: 30px;
+    position: relative;
+    top: 20px; /* Adjust the value as needed */
 }
 .ciber{
     float: left;
-    width: 25%;
+    width: 20%;
     margin-right: 30px;
+    position: relative;
+    top: 17px; /* Adjust the value as needed */
+}
+.IaC{
+        float: left;
+        width: 30%;
+        margin-right: 30px;
+        position: relative;
+        top: 17px; /* Adjust the value as needed */
 }
 .devops{
     width: 35%;
     float: right;
-    margin-right: 30px;
+    margin-right: 0px;
+    position: relative;
+    top: 30px; /* Adjust the value as needed */
+    
 }
 
 .bottom-container{
@@ -210,15 +240,18 @@ a {
 }
 .skill-row{
     width: 50%;
-    margin:  100px auto 100px auto;
+    margin:  160px auto 160px auto;
     text-align: left;
-    
     font-weight: normal;
     
 }
+/*
 .skill-row-ciber-desc{
     clear: left;
-}
+    position: relative;
+    top: 20px; 
+}/* Adjust the value as needed */
+
 .thick{
     font-weight: bold;
 }
@@ -228,13 +261,16 @@ a {
     padding-top: 100px ;
     font-weight: bold;
     padding-bottom: 25px;
+    background: linear-gradient(45deg, #98cbff, #98ffcb);
  
 }
 
 .top-cloud{
+    width: 10%;
     right: 300px;
     top:50px;
     position: absolute;
+  
 }
 
 .vault{
