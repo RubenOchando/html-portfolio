@@ -35,8 +35,12 @@ h3{
 hr{
     
     /*border: dotted grey;*/
-    border-width: 0.0 0 7px;
-    width: 5%;
+
+    border: 1px solid transparent; /* Transparent border */
+
+  
+    
+
 }
 p{
     line-height: 2;
@@ -190,7 +194,7 @@ a {
         width: 30%;
         margin-right: 30px;
         position: relative;
-        top: 17px; /* Adjust the value as needed */
+        top: 10px; /* Adjust the value as needed */
 }
 .devops{
     width: 35%;
