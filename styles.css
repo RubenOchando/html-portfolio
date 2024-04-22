@@ -199,6 +199,17 @@ h3 {
 .resume .base .follow .box a:hover i::before {
   transform: rotate(-45deg) scale(1.5);
 }
+.mybattery{
+  font-size: 45px; /* Adjust the size as needed */
+  background: orange;
+  color: #1a237e;
+  border-radius: 50%; /* Makes the element round */
+  width: 50px; /* Adjust width and height to fit the content */
+  height: 50px;
+  display: inline-block; /* Ensures the element behaves like an inline element */
+  text-align: center; /* Center the content horizontally */
+  line-height: 50px; /* Center the content vertically */
+}
 .resume .base .follow .box i {
   display: inline-block;
   font-size: 30px;
@@ -351,10 +362,13 @@ h3 {
 .resume .func .skills-prog ul li:hover {
   color: yellow;
 }
-.resume .func .skills-prog ul li:hover .skills-bar .bar {
+.resume .func .skills-prog ul:hover li:hover .skills-bar:hover .bar {
   background: yellow;
   box-shadow: 0 0 0 1px yellow;
+
 }
+
+
 .resume .func .skills-prog ul li span {
   display: block;
   width: 120px;
@@ -404,6 +418,7 @@ h3 {
   width: 95%;
   fill: transparent;
   transform: rotate(-90deg);
+
 }
 .resume .func .skills-soft ul li svg circle {
   stroke-width: 1px;
@@ -465,3 +480,8 @@ h3 {
 .resume .func .interests-items div span {
   display: block;
 }
+
+
+/* Add the yellow background dynamically using JavaScript */
+
+
